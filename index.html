@@ -88,20 +88,59 @@
             transform: scale(1.05);
         }
         footer {
+            background-color: #f0f8ff;
+            padding: 20px 0;
             text-align: center;
+            border-top: 1px solid #ccc;
             margin-top: 40px;
             font-size: 0.9em;
             color: #555;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .social-links a.instagram {
+            color: #E1306C;
+        }
+        .social-links a.instagram:hover {
+            color: #b72e5a;
+        }
+        .social-links a.whatsapp {
+            color: #25D366;
+        }
+        .social-links a.whatsapp:hover {
+            color: #1da851;
+        }
+        .social-links a.tiktok {
+            color: #000000;
+        }
+        .social-links a.tiktok:hover {
+            color: #444444;
         }
         @media (max-width: 600px) {
             body {
                 padding: 0 10px;
             }
-            form {
-                max-width: 100%;
+            .social-links {
+                font-size: 20px;
+                gap: 20px;
             }
         }
     </style>
+    <!-- Font Awesome CDN untuk ikon media sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
     <header>
@@ -110,7 +149,7 @@
     </header>
 
     <nav>
-        <a href="profil.html">Profil</a>
+        <a href="index.html">Profil</a>
         <a href="portofolio.html">Portofolio</a>
         <a href="blog.html">Blog</a>
     </nav>
@@ -158,27 +197,18 @@
     </section>
 
     <footer>
-        &copy; 2025 Surya Agung Wicaksono. Semua hak cipta dilindungi.
+        <div class="social-links">
+            <a href="https://www.instagram.com/mochiiyouuu/" target="_blank" rel="noopener" aria-label="Instagram" class="instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/+62895359710532" target="_blank" rel="noopener" aria-label="WhatsApp" class="whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.tiktok.com/@justizumi._" target="_blank" rel="noopener" aria-label="TikTok" class="tiktok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+        <p>© 2025 Surya Agung Wicaksono. Semua hak cipta dilindungi.</p>
     </footer>
-
-    <script>
-        function validateForm() {
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-
-            if (name === '' || email === '' || message === '') {
-                alert('Semua field harus diisi!');
-                return false;
-            }
-            if (!email.includes('@') || !email.includes('.')) {
-                alert('Mohon masukkan email yang valid!');
-                return false;
-            }
-            alert('Terima kasih atas pesan Anda, ' + name + '!');
-            // Di sini bisa ditambahkan pengiriman data menggunakan AJAX atau integrasi email
-            return false; // prevent actual form submission for demo
-        }
-    </script>
 </body>
 </html>
