@@ -74,17 +74,59 @@
             color: #0d47a1;
         }
         footer {
+            background-color: #f0f8ff;
+            padding: 20px 0;
             text-align: center;
+            border-top: 1px solid #ccc;
             margin-top: 40px;
             font-size: 0.9em;
             color: #555;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .social-links a.instagram {
+            color: #E1306C;
+        }
+        .social-links a.instagram:hover {
+            color: #b72e5a;
+        }
+        .social-links a.whatsapp {
+            color: #25D366;
+        }
+        .social-links a.whatsapp:hover {
+            color: #1da851;
+        }
+        .social-links a.tiktok {
+            color: #000000;
+        }
+        .social-links a.tiktok:hover {
+            color: #444444;
         }
         @media (max-width: 600px) {
             body {
                 padding: 0 10px;
             }
+            .social-links {
+                font-size: 20px;
+                gap: 20px;
+            }
         }
     </style>
+    <!-- Font Awesome CDN untuk ikon media sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
     <header>
@@ -92,7 +134,7 @@
     </header>
 
     <nav>
-        <a href="profil.html">Profil</a>
+        <a href="index.html">Profil</a>
         <a href="portofolio.html">Portofolio</a>
         <a href="blog.html">Blog</a>
     </nav>
@@ -100,25 +142,41 @@
     <section>
         <div class="project-list">
             <div class="project">
-                <h3>Website Toko Online</h3>
-                <p>Membuat website e-commerce sederhana menggunakan HTML, CSS, dan JavaScript.</p>
-                <a href="https://github.com/suryaagung/toko-online" target="_blank" rel="noopener">Lihat di GitHub</a>
+                <h3>Mini-Game Catur</h3>
+                <p>Permainan catur interaktif berbasis web dengan antarmuka yang sederhana dan responsif.</p>
+                <a href="chess/index.html" target="_blank" rel="noopener">Mainkan Catur</a>
             </div>
             <div class="project">
-                <h3>Aplikasi To-Do List</h3>
-                <p>Aplikasi manajemen tugas berbasis web dengan fitur tambah, hapus, dan tandai selesai.</p>
-                <a href="https://github.com/suryaagung/todo-list" target="_blank" rel="noopener">Lihat di GitHub</a>
+                <h3>Mini-Game Ular Tangga</h3>
+                <p>Permainan ular tangga klasik yang dapat dimainkan secara online dengan fitur animasi sederhana.</p>
+                <a href="snakesandladder/index.html" target="_blank" rel="noopener">Mainkan Ular Tangga</a>
             </div>
             <div class="project">
-                <h3>Blog Pribadi</h3>
-                <p>Website blog sederhana yang saya buat untuk berbagi pengalaman dan tutorial.</p>
-                <a href="blog.html">Baca Blog</a>
+                <h3>Mini-Game Tetris</h3>
+                <p>Game Tetris klasik dengan kontrol mudah dan tampilan yang menarik.</p>
+                <a href="tetris/index.html" target="_blank" rel="noopener">Mainkan Tetris</a>
+            </div>
+            <div class="project">
+                <h3>Data Mahasiswa</h3>
+                <p>Dataset dan aplikasi terkait data mahasiswa yang berisi informasi akademik dan profil mahasiswa.</p>
+                <a href="data mahasiswa/index.html" target="_blank" rel="noopener">Lihat Data Mahasiswa</a>
             </div>
         </div>
     </section>
 
     <footer>
-        &copy; 2025 Surya Agung Wicaksono. Semua hak cipta dilindungi.
+        <div class="social-links">
+            <a href="https://www.instagram.com/mochiiyouuu/" target="_blank" rel="noopener" aria-label="Instagram" class="instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://wa.me/+62895359710532" target="_blank" rel="noopener" aria-label="WhatsApp" class="whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.tiktok.com/@justizumi._" target="_blank" rel="noopener" aria-label="TikTok" class="tiktok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+        <p>© 2025 Surya Agung Wicaksono. Semua hak cipta dilindungi.</p>
     </footer>
 </body>
 </html>
