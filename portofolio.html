@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Surya Agung Wicaksono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #e3f2fd;
+            color: #0d47a1;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #1976d2;
+        }
+        header h1 {
+            margin: 0;
+            color: #1565c0;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #0d47a1;
+        }
+        section {
+            margin-top: 20px;
+        }
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(21, 101, 192, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+        .project p {
+            font-size: 0.9em;
+            color: #333;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .project a:hover {
+            color: #0d47a1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portofolio - Surya Agung Wicaksono</h1>
+    </header>
+
+    <nav>
+        <a href="profil.html">Profil</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="blog.html">Blog</a>
+    </nav>
+
+    <section>
+        <div class="project-list">
+            <div class="project">
+                <h3>Website Toko Online</h3>
+                <p>Membuat website e-commerce sederhana menggunakan HTML, CSS, dan JavaScript.</p>
+                <a href="https://github.com/suryaagung/toko-online" target="_blank" rel="noopener">Lihat di GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Aplikasi To-Do List</h3>
+                <p>Aplikasi manajemen tugas berbasis web dengan fitur tambah, hapus, dan tandai selesai.</p>
+                <a href="https://github.com/suryaagung/todo-list" target="_blank" rel="noopener">Lihat di GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Blog Pribadi</h3>
+                <p>Website blog sederhana yang saya buat untuk berbagi pengalaman dan tutorial.</p>
+                <a href="blog.html">Baca Blog</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Surya Agung Wicaksono. Semua hak cipta dilindungi.
+    </footer>
+</body>
+</html>
