@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Setiap Anggota Kelompok</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Latar belakang halaman */
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .menu button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        .menu button:hover {
+            background-color: #45a049;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            padding: 20px;
+            display: none;
+            border: 2px solid #ccc; /* Border untuk konten */
+            border-radius: 10px; /* Sudut border yang membulat */
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+            margin: 20px auto; /* Margin untuk memusatkan konten */
+            max-width: 600px; /* Lebar maksimum konten */
+        }
+        .content.active {
+            display: block;
+        }
+        .content img {
+            max-width: 100%; /* Membuat gambar responsif */
+            border-radius: 10px; /* Sudut gambar yang membulat */
+            margin-bottom: 20px; /* Jarak bawah gambar */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Biodata Setiap Anggota Kelompok</h1>
+        <div class="menu">
+            <button onclick="showContent(1)">Rifqi Surya Permana</button>
+            <button onclick="showContent(2)">Surya Agung Wicaksono</button>
+            <button onclick="showContent(3)">Sandy Fitriansyah</button>
+            <button onclick="showContent(4)">Riri Yuliana Febriyanti</button>
+        </div>
+    </div>
+
+    <div id="content1" class="content">
+        <img id="image1" src="" alt="Gambar Rifqi Surya Permana">
+        <h2>Biodata Rifqi Surya Permana</h2>
+        <p><strong>Nama:</strong> Rifqi Surya Permana</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> Bekasi, 31 Maret 2005</p>
+        <p><strong>Gender:</strong> Laki-laki</p>
+        <p><strong>Agama:</strong> Islam</p>
+        <p><strong>Alamat:</strong> Jl Bojong Menteng No.79, Kecamatan Rawalumbu, Kota Bekasi</p>
+        <p><strong>Nomor Telepon:</strong> 081292398228</p>
+        <p><strong>Gmail:</strong> rifqisuryaheykids@gmail.com</p>
+        <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+        
+        <h3>Riwayat Pendidikan</h3>
+        <ul>
+            <li>TK Al-Ihsan (2010-2011)</li>
+            <li>SDN Rawalumbu 1 Kota Bekasi (2011-2017)</li>
+            <li>SMPN 8 Kota Bekasi (2017-2020)</li>
+            <li>MA Khairul Bariyyah (2020-2023)</li>
+        </ul>
+
+        <h3>Hobi</h3>
+        <ul>
+            <li>Membaca novel</li>
+            <li>Membaca komik</li>
+            <li >Main game</li>
+            <li>Memasak</li>
+        </ul>
+
+        <h3>Hal yang Disukai</h3>
+        <p>Hal yang simpel, sesuatu yang instan, makanan yang kaya akan rempah dan meyakinkan dari segi penampilan.</p>
+
+        <h3>Media Sosial</h3>
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/rifqisur_2113" target="_blank">rifqisur_2113</a></li>
+            <li>Whatsapp: <a href="https://wa.me/+6281292398228" target="_blank">+6281292398228</a></li>
+            <li>x: @rifqipermana12</li>
+        </ul>
+
+        <h3>Organisasi yang Pernah Diikuti</h3>
+        <ul>
+            <li>Palang Merah Remaja (PMR) - Aktif: 2017-2020</li>
+            <li>Organisasi Pelajar MA Khairul Bariyyah (OSIS) - Aktif: 2020-2023</li>
+        </ul>
+    </div>
+
+    <div id="content2" class="content">
+        <img id="image2" src="" alt="Gambar Surya Agung Wicaksono">
+        <h2>Biodata Surya Agung Wicaksono</h2>
+        <p><strong>Nama:</strong> Surya Agung Wicaksono</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 13 September 2005</p>
+        <p><strong>Gender:</strong> Laki-laki</p>
+        <p><strong>Agama:</strong> Islam</p>
+        <p><strong>Alamat:</strong> Jl Bojong Menteng No.79, Kecamatan Rawalumbu, Kota Bekasi</p>
+        <p><strong>Nomor Telepon:</strong> 0895359710532</p>
+        <p><strong>Gmail:</strong> suryaagungwicaksono78@gmail.com</p>
+        <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+        
+        <h3>Riwayat Pendidikan</h3>
+        <ul>
+            <li>PAUD Harapan Bunda (2008-2009)</li>
+            <li>TK Al-Aziz (2009-2011)</li>
+            <li>SDS AL-Aziz (2011-2017)</li>
+            <li>SMPN 172 Kota Jakarta Raya (2017-2020)</li>
+            <li>SMA BUDI MULIA UTAMA (2020-2023)</li>
+            <li>Universitas Bhayangkara Jakarta Raya (2023-Sekarang)</li>
+        </ul>
+
+        <h3>Hobi</h3>
+        <ul>
+            <li>Membaca buku</li>
+            <li>Mendengarkan musik</li>
+        </ul>
+
+        <h3>Hal yang Disukai</h3>
+        <p>Ketenangan</p>
+
+        <h3>Media Sosial</h3>
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/suryaa.w___/" target="_blank">@suryaa.w__</a></li>
+            <li>Whatsapp: <a href="https://wa.me/+62895359710532" target="_blank">+62895359710532</a></li>
+            <li>Tiktok: <a href="https://www.tiktok.com/@notinterest_09" target="_blank">@notinterest_09</a></li>
+        </ul>
+
+        <h3>Organisasi yang Pernah Diikuti</h3>
+        <ul>
+            <li>Futsal (2017-2018)</li>
+            <li>Ukm E-Sport (2023-Sekarang)</li>
+        </ul>
+    </div>
+
+    <div id="content3" class="content">
+        <img id="image3" src="" alt="Gambar Sandy Fitriansyah">
+        <h2>Biodata Sandy Fitriansyah</h2>
+        <p><strong>Nama:</strong> Sandy Fitriansyah</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 14 November 2004</p >
+        <p><strong>Gender:</strong> Laki-laki</p>
+        <p><strong>Agama:</strong> Islam</p>
+        <p><strong>Alamat:</strong> Papan Mas Blok F35 No.11, Tambun Selatan, Kabupaten Bekasi</p>
+        <p><strong>Nomor Telepon:</strong> 088290246172</p>
+        <p><strong>Gmail:</strong> sandyselq@gmail.com</p>
+        <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+        
+        <h3>Riwayat Pendidikan</h3>
+        <ul>
+            <li>TK AT-Taubah (2009-2011)</li>
+            <li>SDN Setia Mekar 02 (2011-2017)</li>
+            <li>MTS AL-KHAIRIYAH (2017-2020)</li>
+            <li>MA AL-KHAIRIYAH (2020-2023)</li>
+        </ul>
+
+        <h3>Hobi</h3>
+        <ul>
+            <li>Bermain Games</li>
+            <li>Mendengarkan musik</li>
+        </ul>
+
+        <h3>Hal yang Disukai</h3>
+        <p>Nasi Padang pakai ayam sambal balado dengan bumbu rendang.</p>
+
+        <h3>Media Sosial</h3>
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/csr_blacky/" target="_blank">@csr_blacky</a></li>
+            <li>Whatsapp: <a href="https://wa.me/+6288290246172" target="_blank">+6288290246172</a></li>
+        </ul>
+
+        <h3>Organisasi yang Pernah Diikuti</h3>
+        <ul>
+            <li>Pradana Pramuka</li>
+            <li>OSIS (2022-2023)</li>
+        </ul>
+    </div>
+
+    <div id="content4" class="content">
+        <img id="image4" src="" alt="Gambar Riri Yuliana">
+        <h2>Biodata Riri Yuliana Febriyanti</h2>
+        <p><strong>Nama:</strong> Riri Yuliana Febriyanti</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> Yogyakarta, 01 Februari 2005</p>
+        <p><strong>Gender:</strong> Perempuan</p>
+        <p><strong>Agama:</strong> Islam</p>
+        <p><strong>Alamat:</strong> Kp.cibuntu Rw 01 Rw 04</p>
+        <p><strong>Nomor Telepon:</strong> 089658056564</p>
+        <p><strong>Gmail:</strong> ririyuliana985@gmail.com</p>
+        <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+        
+        <h3>Riwayat Pendidikan</h3>
+        <ul>
+            <li>TK Nabila</li>
+            <li>SDN Cibuntu 01</li>
+            <li>SMPN 2 Tambun Selatan</li>
+            <li>SMK AL-Muslim</li>
+        </ul>
+
+        <h3>Hobi</h3>
+        <ul>
+            <li>Membaca Novel</li>
+            <li>Membaca AU (Alternate Universe) dan angst</li>
+        </ul>
+
+        <h3>Hal yang Disukai</h3>
+        <p>Media Sosial</p>
+
+        <h3>Media Sosial</h3>
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/ririfebriantiii_" target="_blank">ririfebriantiii_</a></li>
+        </ul>
+
+        <h3>Organisasi yang Pernah Diikuti</h3>
+        <ul>
+            <li>Ambalan</li>
+        </ul>
+    </div>
+
+    <script>
+        // Array untuk menyimpan nama file gambar
+        let images = [
+            'Gambar Rifqi Surya Permana.jpg', // Ganti dengan nama file gambar yang sesuai
+            'Gambar Surya Agung Wicaksono.jpg',
+            'Gambar Sandy Fitriansyah.jpg',
+            'Gambar Riri Yuliana febriyanti.jpg'
+        ];
+
+        function showContent(anggota) {
+            // Menyembunyikan semua konten terlebih dahulu
+            let contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Menampilkan konten yang sesuai
+            let content = document.getElementById('content' + anggota);
+            content.classList.add('active');
+
+            // Mengatur sumber gambar
+            let image = content.querySelector('img');
+            image.src = images[anggota - 1]; // anggota - 1 karena array dimulai dari 0
+        }
+    </script>
+
+</body>
+</html>
